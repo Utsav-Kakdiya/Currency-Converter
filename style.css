@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body {
+    background-image: url(./Assetes/background.jpg);
+    background-blend-mode: overlay;
+    background-repeat: repeat-y;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    padding: 15px;
+    height: 290px;
+    width: 360px;
+    display: block;
+    margin: 11rem auto;
+    background-image: linear-gradient(135deg, rgba(19, 24, 36, 0.925), rgba(18, 28, 47, 0.85) 30%, rgba(12, 17, 29, 0.875) 100%);
+    backdrop-filter: blur(16px);
+    border: 2px solid #ffffff30;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    width: 40px;
+}
+
+h2 {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#exchange{
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 5px;
+}
+
+label {
+    color: #d0d0d0;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 25px;
+    border: 1.5px solid black;
+    border-radius: 6px;
+    margin: 7px 0;
+    background-color: #1a1a2e;
+}
+
+select {
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+#result {
+    text-align: center;
+    color: #00ffae;
+}
+
+@media screen and (max-width : 364px) {
+    .main {
+        height: 270px;
+        width: 290px;
+    }
+
+    body {
+        background-image: url(./Assetes/background2.jpg);
+        background-repeat: repeat;
+    }
+}
