@@ -15,7 +15,7 @@ body {
 
 .main {
     padding: 15px;
-    height: 290px;
+    height: 300px;
     width: 360px;
     display: block;
     margin: 11rem auto;
@@ -92,7 +92,7 @@ button {
 
 @media screen and (max-width : 364px) {
     .main {
-        height: 270px;
+        height: 320px;
         width: 290px;
     }
 
