@@ -47,6 +47,7 @@ let button = document.querySelector("button");
 button.addEventListener("click", main);
 
 function main() {
+    let date = document.querySelector(".date");
     let result = document.querySelector("#result");
     let fCountry = document.querySelector(".from select").value;
     let tCountry = document.querySelector(".to select").value;
@@ -66,6 +67,7 @@ function main() {
                 result.innerText = " Please enter the valid number.";
             }
             else {
+                date.innerText = `Updated on ${data.date}`
                 const rate = data.rates[tCountry] / data.rates[fCountry];
                 let fValue = amount * rate;
                 result.innerText = `${fValue} ${tCountry}`;
