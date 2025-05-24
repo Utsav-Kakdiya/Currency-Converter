@@ -52,7 +52,8 @@ function main() {
     let tCountry = document.querySelector(".to select").value;
 
     //Fetch Exchange rates from API.
-    fetch("https://api.currencyapi.com/v3/latest?apikey=cur_live_nvgPSucPS0HvUwuf47p9IRmBuWtsXrNjQDTTQPIS")
+    fetch("https://api.exchangeratesapi.io/v1/latest?access_key=5eb792f90bb5d842fef92d810f54c0cb&format=1")
+
         .then(response => {
             console.log(response.status)
             return response.json()
@@ -65,7 +66,7 @@ function main() {
                 result.innerText = " Please enter the valid number.";
             }
             else {
-                const rate = data.data[tCountry].value / data.data[fCountry].value;
+                const rate = data.rates[tCountry] / data.rates[fCountry];
                 let fValue = amount * rate;
                 result.innerText = `${fValue} ${tCountry}`;
             }
